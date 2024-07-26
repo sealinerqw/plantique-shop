@@ -19,7 +19,7 @@ a{
   position: fixed;
   width: 100%;
   height: 100%;
-  background-image: url('/img/html-bg.jpg');
+  background-image: url('img/html-bg.jpg');
   z-index: 0;
   filter: blur(5px);
   opacity: 0.4;
@@ -51,7 +51,7 @@ a{
   border-radius: 35px;
   padding: 20px;
   /* border: 1px solid black; */
-  background: url("/img/bg.png");
+  background: url("img/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -269,7 +269,7 @@ a{
 }
 
 .imageblock-video:hover{
-  content: url("/img/leaf-anim.gif");
+  content: url("img/leaf-anim.gif");
   transform: scale(1.1);
   filter: grayscale(0);
 }
@@ -601,7 +601,7 @@ a{
   padding-bottom: 10px;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/html-bg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/html-bg.jpg");
   background-position: center;
   background-size: cover;
   align-items: center;
