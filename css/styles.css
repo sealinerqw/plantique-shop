@@ -1,0 +1,196 @@
+
+*{
+  overflow: hidden;
+}
+
+html{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 0.5rem;
+  position: relative;
+  width: 80vw;
+  max-width: 18rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shopfront{
+  width: 13.21rem;
+  height: 26.95rem;
+  background: url("img/shopfront.svg") no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; 
+  gap: 1.5rem;
+}
+
+.shopfront__shelf{
+  padding: 0 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.shopfront__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin-top: -5rem;
+}
+
+.dragging {
+  opacity: 0.7;
+  -webkit-animation: dragShake 0.5s;
+          animation: dragShake 0.5s;
+}
+.cart__image {
+  position: relative;
+  z-index: 2;
+}
+
+/* .cart__image img {
+  width: 70vw;
+  max-width: 280px;
+} */
+
+.cart__items {
+  position: absolute;
+  z-index: 1;
+  left: 4.5rem;
+  top: 4rem;
+  width: 65%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.cart__droparea{
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.button.visible{
+  width: 10.875rem;
+  height: 3.5rem;
+  display: block;
+  opacity: 1;
+  -webkit-animation: buttonBlink 1s infinite;
+          animation: buttonBlink 1s infinite;
+}
+
+.button{
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  background: #FCE000;
+  border-radius: 18px;
+  border: 0px;
+  font-family: "Yandex Sans Text", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 5;
+}
+
+@-webkit-keyframes buttonBlink {
+  from{
+    background: #FCE000;
+  }
+  50%{
+    background: #e0c703;
+  }
+  to{
+    background: #FCE000;
+  }
+}
+
+@keyframes buttonBlink {
+  from{
+    background: #FCE000;
+  }
+  50%{
+    background: #e0c703;
+  }
+  to{
+    background: #FCE000;
+  }
+}
+a{
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+}
+
+@-webkit-keyframes dragShake {
+  0% { -webkit-transform: translateX(0); transform: translateX(0); }
+  25% { -webkit-transform: translateX(-2px); transform: translateX(-2px); }
+  50% { -webkit-transform: translateX(2px); transform: translateX(2px); }
+  75% { -webkit-transform: translateX(-2px); transform: translateX(-2px); }
+  100% { -webkit-transform: translateX(0); transform: translateX(0); }
+}
+
+@keyframes dragShake {
+  0% { -webkit-transform: translateX(0); transform: translateX(0); }
+  25% { -webkit-transform: translateX(-2px); transform: translateX(-2px); }
+  50% { -webkit-transform: translateX(2px); transform: translateX(2px); }
+  75% { -webkit-transform: translateX(-2px); transform: translateX(-2px); }
+  100% { -webkit-transform: translateX(0); transform: translateX(0); }
+}
+
+.shopfront__item.dragging img {
+  -webkit-animation: shake infinite ease;
+          animation: shake infinite ease;
+}
