@@ -1,68 +1,272 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalized.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="fonts/stylesheet.css">
-    <title>Тестовое задание</title>
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/normalized.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-style.css">
+  <title>Plantique</title>
+</head>
+<body>
+  <div class="bg"></div>
     <div class="container">
-    <div class="shopfront">
-      <div class="shopfront__shelf">
-        <div class="shopfront__item">
-          <img src="img/wine.svg" draggable="true" id="wine" alt="wine">
+      <section class="main">
+        <div class="main_header">
+          <div class="header_navcluster">
+            <div class="navcluster_logo">
+              <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="navcluster_navbuttons">
+              <button><a href="#about">About</a></button>
+              <button><a href="#new">New Plants</a></button>
+              <button><a href="#faq">FAQ</a></button>
+            </div>
+          </div>
+          <div class="header_searchbar">
+            <div class="searchbar_icon">
+              <img src="img/search.png" alt="searchicon">
+            </div>
+              <input type="text">
+          </div>
         </div>
-        <div class="shopfront__item">
-          <img src="img/milk.svg" draggable="true" id="milk" alt="milk">
+        <div class="main_textblock">
+          <div class="textblock-smalltext">Plantique</div>
+          <div class="textblock-bigtext">growth</div>
+          <div class="textblock-description">We're your online houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our greenhouse to yours!</div>
         </div>
-        <div class="shopfront__item">
-          <img src="img/jam.svg" draggable="true" id="jam" alt="jam">
+        <div class="main_others">
+          <div class="main_card">
+            <div class="card-text">
+              <h3>100+ Plants</h3>
+              <p>We want our visitors to be inspired to get their hands dirty!</p>
+            </div>
+            <img src="img/r1-r3.png" alt="plants">
+          </div>
+          <div class="main_buttons">
+            <div class="buttons-scrollbutton">
+              <img src="img/arrow.png" alt="arrow">
+            </div>
+            <div class="buttons-shopbutton">
+              <button>Shop Tropical Plants</button>
+            </div>
+          </div>
         </div>
-        <div class="shopfront__item">
-          <img src="img/cheese.svg" draggable="true" id="cheese" alt="cheese">
+      </section>
+      <section class="about" id="about">
+        <div class="about_imageblock">
+          <div class="imageblock-text">
+            <h4>Plants for the People</h4>
+            <p>We want our visitors to be inspired to get their hands dirty!</p>
+          </div>
+          <img src="img/leaf-still.png" class="imageblock-video" alt="">
         </div>
-      </div>
-      <div class="shopfront__shelf">
-        <div class="shopfront__item">
-          <img src="img/meat.svg" draggable="true" id="meat" alt="meat">
+        <div class="about_textblock">
+          <p>Each plant is cared <span><img src="img/about-span.png" alt=""></span> for by our horticultural experts, so they are as happy and as healthy as they can get</p>
         </div>
-        <div class="shopfront__item">
-          <img src="img/chicken.svg" draggable="true" id="chicken" alt="chicken">
+      </section>
+      <section class="collection" >
+        <div class="collection_selector">
+          <div class="selector-button" id="1">Outdoor Plants</div>
+          <div class="selector-button" id="2">Indoor Plants</div>
+          <div class="selector-button" id="3">Potted Plants</div>
+          <div class="selector-button" id="4">Flowers</div>
         </div>
-        <div class="shopfront__item">
-          <img src="img/chips.svg" draggable="true" id="chips" alt="chips">
+        <div class="collection_selection">
+          <div class="selection_item" style="background-image: url(img/card-bg1.jpeg);">
+            <h4>Pet Friendly</h4>
+            <p class="item-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure officiis, vero aliquid odio accusamus in placeat, veritatis atque non officia at nostrum dolorem velit iusto, ea provident perferendis. Sit, architecto.</p>
+          </div>
+          <div class="selection_item" style="background-image: url(img/card-bg1.jpeg);">
+            <h4>Orchids</h4>
+            <p class="item-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure officiis, vero aliquid odio accusamus in placeat, veritatis atque non officia at nostrum dolorem velit iusto, ea provident perferendis. Sit, architecto.</p>
+          </div>
+          <div class="selection_item" style="background-image: url(img/card-bg1.jpeg);">
+            <h4>Succulents</h4>
+            <p class="item-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure officiis, vero aliquid odio accusamus in placeat, veritatis atque non officia at nostrum dolorem velit iusto, ea provident perferendis. Sit, architecto.</p>
+          </div>
+          <div class="selection_item" style="background-image: url(img/card-bg1.jpeg);">
+            <h4>Cactuses</h4>
+            <p class="item-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure officiis, vero aliquid odio accusamus in placeat, veritatis atque non officia at nostrum dolorem velit iusto, ea provident perferendis. Sit, architecto.</p>
+          </div>
         </div>
-      </div>
-      <div class="shopfront__shelf">
-        <div class="shopfront__item">
-          <img src="img/pineapple.svg" draggable="true" id="pineapple" alt="pineapple">
+      </section>
+      <section class="new" id="new">
+        <div class="new_title">
+          <h3>New Plants</h4>
+          <p>Bring nature inside your home and shop our big selections of fresh indoor plants including Instagram-worthy houseplants, pet-friendly plants, orchids and one-of-a-kind rare plants.</p>
         </div>
-        <div class="shopfront__item">
-          <img src="img/bananas.svg" draggable="true" id="bananas" alt="bananas">
+        <div class="new_items">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="new_items-item">
+                  <img src="img/item1.png" alt="">
+                  <h5 class="item-title">Peperomia Plants</h5>
+                  <p class="item-description">Moist, but well-drained</p>
+                  <p class="price">₽ 9,990</p>
+                </div>
+                <div class="new_items-item">
+                  <img src="img/item2.png" alt="">
+                  <h5 class="item-title">Fiddle-Leaf Fig</h5>
+                  <p class="item-description">Moist, but well-drained</p>
+                  <p class="price">₽ 19,990</p>
+                </div>
+                <div class="new_items-item">
+                  <img src="img/item3.png" alt="">
+                  <h5 class="item-title">Calathea Orbifolia</h5>
+                  <p class="item-description">Moist, but well-drained</p>
+                  <p class="price">₽ 13,590</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="new_items-item">
+                  <img src="img/item1.png" alt="">
+                  <h5 class="item-title">Peperomia Plants</h5>
+                  <p class="item-description">Moist, but well-drained</p>
+                  <p class="price">₽ 9,990</p>
+                </div>
+                <div class="new_items-item">
+                  <img src="img/item2.png" alt="">
+                  <h5 class="item-title">Fiddle-Leaf Fig</h5>
+                  <p class="item-description">Moist, but well-drained</p>
+                  <p class="price">₽ 19,990</p>
+                </div>
+                <div class="new_items-item">
+                  <img src="img/item3.png" alt="">
+                  <h5 class="item-title">Calathea Orbifolia</h5>
+                  <p class="item-description">Moist, but well-drained</p>
+                  <p class="price">₽ 13,590</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="new_items-item">
+                  <img src="img/item1.png" alt="">
+                  <h5 class="item-title">Peperomia Plants</h5>
+                  <p class="item-description">Moist, but well-drained</p>
+                  <p class="price">₽ 9,990</p>
+                </div>
+                <div class="new_items-item">
+                  <img src="img/item2.png" alt="">
+                  <h5 class="item-title">Fiddle-Leaf Fig</h5>
+                  <p class="item-description">Moist, but well-drained</p>
+                  <p class="price">₽ 19,990</p>
+                </div>
+                <div class="new_items-item">
+                  <img src="img/item3.png" alt="">
+                  <h5 class="item-title">Calathea Orbifolia</h5>
+                  <p class="item-description">Moist, but well-drained</p>
+                  <p class="price">₽ 13,590</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="new_items-item">
+                  <img src="img/item1.png" alt="">
+                  <h5 class="item-title">Peperomia Plants</h5>
+                  <p class="item-description">Moist, but well-drained</p>
+                  <p class="price">₽ 9,990</p>
+                </div>
+                <div class="new_items-item">
+                  <img src="img/item2.png" alt="">
+                  <h5 class="item-title">Fiddle-Leaf Fig</h5>
+                  <p class="item-description">Moist, but well-drained</p>
+                  <p class="price">₽ 19,990</p>
+                </div>
+                <div class="new_items-item">
+                  <img src="img/item3.png" alt="">
+                  <h5 class="item-title">Calathea Orbifolia</h5>
+                  <p class="item-description">Moist, but well-drained</p>
+                  <p class="price">₽ 13,590</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </div>
-        <div class="shopfront__item">
-          <img src="img/apple.svg" draggable="true" id="apple" alt="apple">
+      </section>
+      <section class="video">
+        <div class="video_text">
+          <h3>Quality Plants and Curated Goods</h3>
+          <p>We offer a carefully curated selection of indoor and outdoor plants, hand crafted home goods that put quality ahead of quantity, and living art made right here in the shop: terrariums, landscapes, arrangements, vessels, and holders.</p>
         </div>
-        <div class="shopfront__item">
-          <img src="img/lettuce.svg" draggable="true" id="lettuce" alt="lettuce">
+          <video class="video_player" muted loop>
+            <source src="img/flower-timelapse.mp4" type="video/mp4">
+          </video>
+      </section>
+      <section class="faq" id="faq">
+        <h4 class="faq_title">Frequently Asked Questions</h4>
+        <div class="faq_question">
+          <div class="faq_question-title">
+            <div class="question-title-text">Do we deliver plants?</div>
+            <div class="question-title-button">
+              <img src="img/arrow-down-right.png" id="arrow" alt="">
+            </div>
+          </div>
+          <div class="faq_question-answer">
+            <p class="question-answer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At quam reiciendis doloribus optio iusto fugiat? Eaque obcaecati harum adipisci reiciendis provident, cumque quasi maiores, excepturi fuga, eos nam reprehenderit enim.</p>
+          </div>
         </div>
-      </div>
+        <div class="faq_question">
+          <div class="faq_question-title">
+            <div class="question-title-text">Do we provide potting services?</div>
+            <div class="question-title-button">
+              <img src="img/arrow-down-right.png" id="arrow" alt="">
+            </div>
+          </div>
+          <div class="faq_question-answer">
+            <p class="question-answer-text">We offer potting on in store purchases or you are welcome to bring in your own and we can pot them for you: There is a fee depending one what supplies are used. Visit us or call us for more
+              details.</p>
+          </div>
+        </div>
+        <div class="faq_question">
+          <div class="faq_question-title">
+            <div class="question-title-text">Do we ship plants?</div>
+            <div class="question-title-button">
+              <img src="img/arrow-down-right.png" id="arrow" alt="">
+            </div>
+          </div>
+          <div class="faq_question-answer">
+            <p class="question-answer-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, obcaecati ad atque molestias iste alias amet sunt earum voluptatum laboriosam, vero necessitatibus autem cumque! Ullam voluptate ut totam repudiandae recusandae.</p>
+          </div>
+        </div>
+        <div class="faq_question">
+            <div class="faq_question-title">
+              <div class="question-title-text">Can I place a pick-up order?</div>
+              <div class="question-title-button">
+                <img src="img/arrow-down-right.png" id="arrow" alt="">
+              </div>
+            </div>
+            <div class="faq_question-answer">
+              <p class="question-answer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem doloribus sunt, aliquid soluta porro similique fugiat magni minus omnis tempora rem explicabo commodi. Nisi, debitis culpa? Ipsa reiciendis beatae ea.</p>
+            </div>
+          </div>
+      </section>
+      <section class="links">
+        <div class="links_logo">
+          <img src="/img/links-logo.png" alt="">
+        </div>
+        <div class="links_text">
+          <h4>Join The Community!</h4>
+          <p>Check out our social networks to receive monthly plant tips, promotions and more!</p>
+        </div>
+        <div class="links_socials">
+          <div class="socials_buttons">
+            <div class="socials-button tg"><a target="_blank" href="https://t.me/sealiner_qw">Telegram</a></div>
+            <div class="socials-button vk"><a target="_blank" href="https://vk.com/sealiner_qw">VK</a></div>
+            <div class="socials-button gh"><a target="_blank" href="https://github.com/sealinerqw/">GitHub</a></div>
+          </div>
+          <div class="socials_copyright">
+            <div class="copyright-line"></div>
+            <p>©2024, Made by <span>sealiner</span>.</p>
+          </div>
+        </div>
+      </section>
     </div>
-    <div class="cart">
-        <div class="cart__image">
-          <img src="img/cart.svg" alt="cart">
-        </div>
-        <div class="cart__droparea"></div>
-        <div class="cart__items"></div>
-      </div>
-      <button class="button" onclick="location.assign('https://lavka.yandex.ru/')">
-        Оплатить корзину
-      </button>
-    
-    </div>
-    <script type="text/javascript" src="js/script.js"></script>
-  </body>
-  </html>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
